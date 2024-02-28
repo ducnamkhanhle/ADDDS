@@ -2,7 +2,8 @@
 
 Referee::Referee(){}
 Player* Referee::refGame(Player* player1, Player* player2){
-    char player1_move = player1->getMove(), player2_move = player2->getMove();
+    char player1_move = player1->makeMove();
+    char player2_move = player2->makeMove();
 
     if (player1_move == 'R'){
         if (player2_move == 'R') return nullptr;

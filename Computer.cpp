@@ -7,9 +7,5 @@ string Computer::getName(){
 }
 
 char Computer::makeMove(){
-    _move = 'R';
-}
-
-char Computer::getMove(){
-    return _move;
+    return 'R';
 }

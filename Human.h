@@ -9,7 +9,6 @@ class Human : public Player{
         Human(string name);
         char makeMove();
         string getName();
-        char getMove();
 };
 
 #endif

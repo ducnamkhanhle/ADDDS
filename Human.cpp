@@ -7,11 +7,7 @@ char Human::makeMove(){
     char move;
     cout << "Enter Move: ";
     cin >> move;
-    _move = move;
-}
-
-char Human::getMove(){
-    return _move;
+    return move;
 }
 
 string Human::getName(){
