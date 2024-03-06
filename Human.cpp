@@ -1,18 +1,18 @@
 #include "Human.h"
+#include "Factory.h"
 #include <iostream>
 
 Human::Human() : Human("Human") {}
 Human::Human(string name) : Player(name) {}
-char Human::makeMove(){
-    char move;
+Move* Human::makeMove(){
+    string move;
     cout << "Enter Move: ";
     cin >> move;
-    _move = move;
+    
+    Factory strToObj;
+    return strToObj.getMoveObject(move);
 }
 
-char Human::getMove(){  
-    return _move;
-}
 
 string Human::getName(){
     return _name;

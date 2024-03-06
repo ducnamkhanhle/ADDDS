@@ -2,5 +2,5 @@
 
 Player::Player() : Player("") {}
 Player::Player(string name) : _name(name){}
-char Player::makeMove() {}
+Move* Player::makeMove() {}
 string Player::getName() {}

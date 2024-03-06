@@ -3,6 +3,7 @@
 #include<iostream>
 #include<string>
 #include<math.h>
+#include "Move.h"
 using namespace std;
 
 class Player{
@@ -12,7 +13,7 @@ class Player{
     public:
         Player();
         Player(string name);
-        virtual char makeMove() = 0;
+        virtual Move* makeMove() = 0;
         virtual string getName() = 0;
         virtual char getMove() = 0;
 };

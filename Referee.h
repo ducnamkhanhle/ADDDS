@@ -1,12 +1,12 @@
 #ifndef REFEREE
 #define REFEREE
 #include "Player.h"
-using namespace std;
+#include "Move.h"
 
 class Referee{
     public:
         Referee();
-        Player* refGame(Player* player1, Player* player2);
+        Move* refGame(Player* player1, Player* player2);
 
 };
 
