@@ -6,7 +6,8 @@
 using namespace std;
 int main(){
     Player* player1 = new Human("ngoc");
-    Player* player2 = new Computer("");
+    Player* player2 = new Computer();
+    // Player* player3 = new Human("khanh");
     
     Referee referee;
 

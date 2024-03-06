@@ -10,7 +10,7 @@ char Human::makeMove(){
     _move = move;
 }
 
-char Human::getMove(){
+char Human::getMove(){  
     return _move;
 }
 

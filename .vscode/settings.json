@@ -8,6 +8,7 @@
         "typeinfo": "cpp",
         "utility": "cpp",
         "xtr1common": "cpp",
-        "xutility": "cpp"
+        "xutility": "cpp",
+        "iostream": "cpp"
     }
 }
