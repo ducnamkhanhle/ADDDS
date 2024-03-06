@@ -6,8 +6,6 @@
 #include<string>
 
 class Ninja : public Move{
-    private:
-        std::vector<std::string> looseList;
     public:
         Ninja();
         std::string getName();

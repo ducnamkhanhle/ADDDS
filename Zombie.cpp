@@ -7,6 +7,6 @@ std::string Zombie::getName() {
     return "Zombie";
 }
 
-std::vector<int,std::string> Zombie::getLooseList(){
+std::vector<std::string> Zombie::getLooseList(){
     return looseList;
 }

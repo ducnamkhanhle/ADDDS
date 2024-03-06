@@ -6,8 +6,6 @@
 #include<string>
 
 class Pirate : public Move{
-    private:
-        std::vector<std::string> looseList;
     public:
         Pirate();
         std::string getName();

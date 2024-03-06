@@ -1,13 +1,13 @@
-#ifndef MONKEY
-#define MONKEY
+#ifndef ROCK
+#define ROCK
 
 #include "Move.h"
 #include<vector>
 #include<string>
 
-class Monkey : public Move{     
+class Rock : public Move{
     public:
-        Monkey();
+        Rock();
         std::string getName();
         std::vector<std::string> getLooseList();
 

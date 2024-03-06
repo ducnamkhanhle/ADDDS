@@ -6,8 +6,6 @@
 #include<string>
 
 class Robot : public Move{
-    private:
-        std::vector<std::string> looseList;
     public:
         Robot();
         std::string getName();

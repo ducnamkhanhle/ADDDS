@@ -15,7 +15,6 @@ class Player{
         Player(string name);
         virtual Move* makeMove() = 0;
         virtual string getName() = 0;
-        virtual char getMove() = 0;
 };
 
 #endif

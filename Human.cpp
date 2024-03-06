@@ -1,6 +1,6 @@
 #include "Human.h"
 #include "Factory.h"
-#include <iostream>
+
 
 Human::Human() : Human("Human") {}
 Human::Human(string name) : Player(name) {}

@@ -6,8 +6,6 @@
 #include<string>
 
 class Zombie : public Move{
-    private:
-        std::vector<std::string> looseList;
     public:
         Zombie();
         std::string getName();

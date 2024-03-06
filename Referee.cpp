@@ -1,18 +1,22 @@
 #include "Referee.h"
 
 Referee::Referee(){}
-Move* Referee::refGame(Player* player1, Player* player2){
+Player* Referee::refGame(Player* player1, Player* player2){
     Move* player1_move = player1->makeMove();
     Move* player2_move = player1->makeMove();
 
     Move checkMove;
     bool isLoose = checkMove.isLoostAgainst(player1_move, player2_move);
-
-    if (isLoose == false){
-        return player1_move;
+    bool isDraw = checkMove.isDrawAgains(player1_move, player2_move);
+    if (!isLoose){
+        return player1;
     }
-    else {
-        return player2_move;
+    else if (isDraw){
+        
+        return nullptr; 
+    }
+    else{
+        return player2;
     }
 
 

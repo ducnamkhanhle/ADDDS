@@ -10,7 +10,7 @@ int main(){
     
     Referee referee;
 
-    Player* winner = referee.refGame(player2, player1);
+    Player* winner = referee.refGame(player1, player2);
 
     if (winner != nullptr) cout << winner->getName() << " Wins";
     else cout << "It's a tie";
