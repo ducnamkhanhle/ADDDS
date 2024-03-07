@@ -2,8 +2,6 @@
 #define PIRATE
 
 #include "Move.h"
-#include<vector>
-#include<string>
 
 class Pirate : public Move{
     public:

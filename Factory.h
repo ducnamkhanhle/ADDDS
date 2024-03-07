@@ -1,6 +1,5 @@
 #ifndef FACTORY
 #define FACTORY
-#include<string>
 #include "Move.h"
 
 class Factory{

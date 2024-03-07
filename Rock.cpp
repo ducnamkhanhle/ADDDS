@@ -1,5 +1,4 @@
 #include "Rock.h"
-#include <vector>
 Rock::Rock() {
     looseList = {"Paper"};
 }

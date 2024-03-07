@@ -2,8 +2,6 @@
 #define ZOMBIE
 
 #include "Move.h"
-#include<vector>
-#include<string>
 
 class Zombie : public Move{
     public:

@@ -2,8 +2,7 @@
 #define PAPER
 
 #include "Move.h"
-#include<vector>
-#include<string>
+
 
 class Paper : public Move{
     public:

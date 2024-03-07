@@ -2,8 +2,6 @@
 #define SCISSORS
 
 #include "Move.h"
-#include<vector>
-#include<string>
 
 class Scissors : public Move{
     public:

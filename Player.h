@@ -9,7 +9,6 @@ using namespace std;
 class Player{
     protected:
         string _name;
-        char _move;
     public:
         Player();
         Player(string name);

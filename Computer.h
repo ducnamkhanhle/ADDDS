@@ -7,6 +7,7 @@
 class Computer : public Player{
     private:
         Factory strToObj;
+        
     public:
         Computer();
         Computer(string name);
