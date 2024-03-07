@@ -6,7 +6,7 @@ Human::Human() : Human("Human") {}
 Human::Human(string name) : Player(name) {}
 Move* Human::makeMove(){
     string move;
-    cout << "Enter Move: ";
+    // cout << "Enter Move: ";
     cin >> move;
     
     Factory strToObj;

@@ -9,5 +9,5 @@ string Computer::getName(){
 
 Move* Computer::makeMove(){
     Factory strToObj;
-    return strToObj.getMoveObject("Monkey");
+    return strToObj.getMoveObject("Rock");
 }
