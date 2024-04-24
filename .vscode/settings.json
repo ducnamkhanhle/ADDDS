@@ -43,6 +43,9 @@
         "xmemory": "cpp",
         "xstddef": "cpp",
         "xstring": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "list": "cpp",
+        "algorithm": "cpp",
+        "optional": "cpp"
     }
 }
