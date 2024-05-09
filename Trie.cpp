@@ -5,6 +5,7 @@ Trie::Trie(){
 }
 
 void Trie::getWordFromPrefix(TrieNode* currNode, std::string prefix, std::vector<std::string>& res){
+    if (currNode == nullptr) return;
     if (currNode->isEndOfWord == true){
         res.push_back(prefix);
     }
@@ -13,6 +14,28 @@ void Trie::getWordFromPrefix(TrieNode* currNode, std::string prefix, std::vector
     for (auto it = childlist.begin(); it != childlist.end(); it++){
         getWordFromPrefix(it->second, prefix + it->first, res);
     }
+}
+
+std::string Trie::getLongestPrefix(std::string partialWord){
+    std::string res;
+    
+    if (partialWord.size() == 0) return "";
+
+    TrieNode* currNode = root;
+
+    for (unsigned int i = 0; i < partialWord.size(); i++){
+        std::string tmp = partialWord.substr(i, 1);
+
+        if (currNode->childNodes[tmp] != nullptr){
+            res = res + tmp;
+            currNode = currNode->childNodes[tmp];
+        }
+        else {
+            break;
+        }
+    }
+
+    return res;
 }
 
 
