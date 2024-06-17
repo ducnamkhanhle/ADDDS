@@ -17,7 +17,6 @@ int DocumentManager::search(std::string name){
     return 0;
 }
 
-
 bool DocumentManager::borrowDocument(int docid, int patronID){
     auto &it = docList[docid];
     auto &numOfCopies = std::get<2>(it);
@@ -42,6 +41,5 @@ bool DocumentManager::borrowDocument(int docid, int patronID){
 void DocumentManager::returnDocument(int docid, int patronID){
     auto &it = docList[docid];
     auto &numOfCopies = std::get<2>(it);
-
     numOfCopies -= 1;
 }
